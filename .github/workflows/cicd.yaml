@@ -14,8 +14,8 @@ jobs:
      - name: aws-login
        uses: action/aws-credentials@v4
        with:
-         aws-access-key-id: ${{secret.ACCESS_ID}}
-         aws-secret-access-key: ${{secret.ACCESS_PASS}}
+         aws-access-key-id: ${{secrets.ACCESS_ID}}
+         aws-secret-access-key: ${{secrets.ACCESS_PASS}}
          aws-region: ap-south-1
      - name: s3-deploy
        run: aws s3 sync . facebooksproject
