@@ -1,0 +1,21 @@
+name: CICD
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+     - name: cloning
+       uses: action/checkout@v4
+     - name: aws-login
+       uses: action/aws-credentials@v4
+       with:
+         aws-access-key-id: ${{secret.ACCESS_ID}}
+         aws-secret-access-key: ${{secret.ACCESS_PASS}}
+         aws-region: ap-south-1
+     - name: s3-deploy
+       run: aws s3 sync . facebooksproject

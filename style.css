@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4267B2;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  header input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  header .profile {
+    cursor: pointer;
+  }
+  
+  main {
+    display: flex;
+    margin: 20px;
+  }
+  
+  aside {
+    width: 20%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  aside ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  aside ul li {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .feed {
+    width: 75%;
+    margin-left: 20px;
+  }
+  
+  .post {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
