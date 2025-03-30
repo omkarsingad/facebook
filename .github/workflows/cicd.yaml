@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: cloning
-       uses: action/checkout@v4
+       uses: action/checkout@v3
      - name: aws-login
        uses: action/aws-credentials@v4
        with:
